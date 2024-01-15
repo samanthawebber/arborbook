@@ -1,0 +1,37 @@
+<div id="<%= dom_id arborist %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">First name:</strong>
+    <%= arborist.first_name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Last name:</strong>
+    <%= arborist.last_name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Isa certified:</strong>
+    <%= arborist.isa_certified %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Etv certified:</strong>
+    <%= arborist.etv_certified %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Zipcode:</strong>
+    <%= arborist.zipcode %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Skills:</strong>
+    <%= arborist.skills %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this arborist", arborist, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this arborist", edit_arborist_path(arborist), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

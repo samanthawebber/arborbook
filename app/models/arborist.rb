@@ -1,0 +1,2 @@
+class Arborist < ApplicationRecord
+end
